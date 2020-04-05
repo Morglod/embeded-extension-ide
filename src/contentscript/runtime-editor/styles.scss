@@ -1,0 +1,43 @@
+.code-editor-workspace {
+    display: flex;
+
+    &__sidebar {
+        width: 150px;
+    }
+
+    &__small-btn {
+        display: inline-block;
+        height: 100%;
+        border: 1px solid gray;
+        cursor: pointer;
+        &:hover {
+            background: blue;
+        }
+    }
+
+    &__model {
+        cursor: pointer;
+
+        &:hover {
+            background: lightgray;
+        }
+
+        &.--selected {
+            background: lightyellow;
+        }
+
+        &.--pattern {
+            background: lightblue;
+        }
+
+        &.--btn {
+            border: 1px solid gray;
+            border-radius: 2px;
+        }
+    }
+}
+
+.code-editor {
+    width: 800px;
+    height: 500px;
+}
